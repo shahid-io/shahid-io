@@ -1,16 +1,21 @@
-## Hi there 👋
+# Hi, I’m Shahid Raza
 
-<!--
-**shahid-io/shahid-io** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a Backend Developer with over 2 years of experience building robust, scalable, and high-performance systems. My focus is on designing clean APIs, optimizing backend logic, and delivering reliable solutions to real-world problems.
 
-Here are some ideas to get you started:
+## What I Do
+- Architect and implement backend systems using Node.js, TypeScript, Java, Python, and Go
+- Develop RESTful and GraphQL APIs, real-time services, and microservices
+- Integrate and optimize databases such as PostgreSQL, MySQL, MongoDB, and Redis
+- Apply SOLID principles, clean code, and modern design patterns for maintainable codebases
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Tech Toolbox
+Node.js, NestJS, Express.js, Spring Boot, Flask  
+PostgreSQL, MongoDB, Redis  
+Docker, Git, Linux
+
+## Connect
+[GitHub](https://github.com/shahid-io) | [LinkedIn](https://linkedin.com/in/shahid-raza-2615b4129/) | [LeetCode](https://leetcode.com/razashahid532)
+
+---
+
+I’m always open to exciting projects and collaborations. Reach out if you want to build something impactful together.

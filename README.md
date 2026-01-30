@@ -1,21 +1,57 @@
-# Hi, I’m Shahid Raza
+# Shahid Raza — Backend Engineer
 
-I'm a Backend Developer with over 3 years of experience. My focus is on designing clean APIs, optimizing backend logic, and delivering reliable solutions to real-world problems.
-
-## What I Do
-- Architect and implement backend systems using Node.js, TypeScript, Java, Python, and Go
-- Develop RESTful and GraphQL APIs, real-time services, and microservices
-- Integrate and optimize databases such as PostgreSQL, MySQL, MongoDB, and Redis
-- Apply SOLID principles, clean code, and modern design patterns for maintainable codebases
-
-## Tech Toolbox
-Node.js, NestJS, Express.js, Spring Boot, Flask  
-PostgreSQL, MongoDB, Redis  
-Docker, Git, Linux
-
-## Connect
-[GitHub](https://github.com/shahid-io) | [LinkedIn](https://linkedin.com/in/shahid-raza-2615b4129/) | [LeetCode](https://leetcode.com/razashahid532)
+Hi, I’m Shahid.
+I’m a software engineer who enjoys building systems, solving problems, and writing clean, maintainable code.
 
 ---
 
-I’m always open to exciting projects and collaborations. Reach out if you want to build something impactful together.
+## What I do
+- Design and implement scalable RESTful and GraphQL APIs
+- Build microservices and event-driven systems for real-time and background processing
+- Optimize data models, queries, and caching strategies for PostgreSQL, MongoDB and Redis
+- Containerize and deploy services with Docker and CI/CD pipelines
+- Ensure reliability with monitoring, logging, and automated testing
+
+---
+
+## Core strengths
+- API design & documentation (OpenAPI / GraphQL)
+- Microservices & message-driven architectures
+- Database design, indexing, and query optimization
+- Observability: logging, metrics, and tracing
+- Test-driven development, integration tests, and contract testing
+- Clean code, SOLID principles, and pragmatic refactoring
+
+---
+
+## Tech stack
+- Languages: Node.js (TypeScript), Java, Python, Go
+- Frameworks: NestJS, Express, Spring Boot, Flask
+- Databases: PostgreSQL, MySQL, MongoDB, Redis
+- Infrastructure: Docker, Git, Linux, CI/CD (GitHub Actions, GitLab CI, etc.)
+
+---
+
+## How I work
+- API-first mindset: design clear contracts and document them
+- Prioritize observability and error handling from day one
+- Keep services small and focused — minimize blast radius
+- Prefer incremental improvements and measurable outcomes
+- Collaborate closely with product and frontend teams to ship value faster
+
+---
+
+## Open to
+- Backend systems, API design, and system architecture roles
+- Contract and freelance work on backend projects
+- Mentorship and code reviews for backend teams
+
+---
+
+## Connect
+- GitHub: https://github.com/shahid-io  
+- LinkedIn: https://linkedin.com/in/shahid-raza-2615b4129/  
+- LeetCode: https://leetcode.com/razashahid532  
+- Email: razashahid532@gmail.com
+
+---

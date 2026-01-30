@@ -1,6 +1,6 @@
 # Hi, I’m Shahid Raza
 
-I'm a Backend Developer with over 2 years of experience building robust, scalable, and high-performance systems. My focus is on designing clean APIs, optimizing backend logic, and delivering reliable solutions to real-world problems.
+I'm a Backend Developer with over 3 years of experience. My focus is on designing clean APIs, optimizing backend logic, and delivering reliable solutions to real-world problems.
 
 ## What I Do
 - Architect and implement backend systems using Node.js, TypeScript, Java, Python, and Go

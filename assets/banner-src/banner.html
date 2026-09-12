@@ -1,0 +1,41 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Inter+Tight:wght@400;500&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--fg:#111;--muted:#525252;--subtle:#8a8a8a;--border:#e6e6e6;--accent:#a80000;--coral:#a80000;--blue:#2e6ff2;--violet:#8b5cf6;--sun:#ffc23c;--shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.06)}
+.dark{--bg:#1e1e1e;--card:#111;--fg:#f5f5f5;--muted:#d1d1d1;--subtle:#999;--border:#272626;--accent:#ff6b5c;--coral:#ff5747;--blue:#5b8cff;--violet:#a78bfa;--sun:#ffd166;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:360px;background:var(--bg);font-family:"Inter Tight",system-ui,sans-serif;color:var(--fg);overflow:hidden}
+.wrap{display:grid;grid-template-columns:1fr 590px;gap:40px;height:100%;padding:44px 48px}
+.lock{display:flex;align-items:center;gap:12px}
+.lock .mark{width:34px;height:34px;border-radius:9px}
+.lock .word{height:21px}
+.left{display:flex;flex-direction:column}
+h1{font-family:"Plus Jakarta Sans",sans-serif;font-weight:700;font-size:60px;letter-spacing:-.03em;line-height:1;margin-top:46px}
+.role{margin-top:14px;font-size:21px;line-height:1.4;color:var(--muted);max-width:460px}
+.role b{color:var(--accent);font-weight:500}
+.url{margin-top:auto;font-family:"JetBrains Mono",monospace;font-size:14px;color:var(--subtle)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:center}
+.c{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:18px 20px 18px;box-shadow:var(--shadow)}
+.bar{display:block;width:34px;height:5px;border-radius:9px;margin-bottom:12px}
+.n{font-family:"JetBrains Mono",monospace;font-weight:500;font-size:19px}
+.h{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--accent);margin-top:4px}
+.t{font-size:13.5px;color:var(--muted);margin-top:8px;line-height:1.35}
+.label{grid-column:1/-1;font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:-2px}
+</style></head><body>
+<div class="wrap">
+  <div class="left">
+    <div class="lock"><img class="mark" src="mark.svg"><img class="word" id="word" src="logo.svg"></div>
+    <h1>Shahid Raza</h1>
+    <p class="role">Software engineer at <b>Binary Semaphore</b>, leading core development.</p>
+    <p class="url">binarysemaphore.com/team/shahid-raza</p>
+  </div>
+  <div class="grid">
+    <div class="label">Building at Binary Semaphore</div>
+    <div class="c"><span class="bar" style="background:var(--coral)"></span><div class="n">inode</div><div class="h">inode.binarysemaphore.com</div><div class="t">CLI knowledge base, retrieves by meaning</div></div>
+    <div class="c"><span class="bar" style="background:var(--blue)"></span><div class="n">notchify</div><div class="h">github.com/BiSemaphore</div><div class="t">Developer toolbox in the Mac notch</div></div>
+    <div class="c"><span class="bar" style="background:var(--violet)"></span><div class="n">Resume</div><div class="h">resume.binarysemaphore.com</div><div class="t">Resume builder, preview is the PDF</div></div>
+    <div class="c"><span class="bar" style="background:var(--sun)"></span><div class="n">Learn</div><div class="h">learn.binarysemaphore.com</div><div class="t">One to one CS mentorship</div></div>
+  </div>
+</div>
+<script>if(location.hash==="#dark"){document.documentElement.className="dark";document.getElementById("word").src="logo-dark.svg"}</script>
+</body></html>

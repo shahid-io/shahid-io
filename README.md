@@ -1,41 +1,59 @@
-# Hi, I'm Shahid
+<a href="https://binarysemaphore.com/team/shahid-raza">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+    <img src="assets/banner-light.png" width="100%" alt="Shahid Raza, software engineer at Binary Semaphore, leading core development. Building inode, notchify, Resume and Learn.">
+  </picture>
+</a>
 
-I'm a backend engineer in Kerala, India. Most of what I build is TypeScript and Go: APIs, queues, search, and the parts of a system that decide what happens when something fails.
+I work mostly in TypeScript and Go, on the parts of a system where getting it wrong is expensive: authentication and authorization, payments, database transactions, message queues, and concurrency control.
 
-These days I build developer tools at [Binary Semaphore](https://binarysemaphore.com) and write up what I learn along the way.
+## Binary Semaphore
 
-## Selected work
+A small studio building software across AI, distributed systems, and developer tools. These are the products I build there. The full profile lives at [binarysemaphore.com/team/shahid-raza](https://binarysemaphore.com/team/shahid-raza).
 
-| Project | What it is |
-| --- | --- |
-| [**beeline**](https://github.com/shahid-io/beeline) | A command palette over 80,000 records that runs entirely in the browser. No search server: p95 of 1ms per keystroke at typing pace, with typo tolerance and a benchmark you can run inside the app.<br>*TypeScript, React, typed-array index, 365 test assertions* |
-| [**polaris**](https://github.com/shahid-io/polaris) | Flight search across six providers that spots the same flight sold by different sellers, so you get one row per flight with every price on it. A provider that fails shows up as a status, not a failed search.<br>*NestJS, Next.js, Zod, MongoDB, Turborepo, 263 tests* |
-| [**inode**](https://github.com/shahid-io/inode) | A CLI knowledge base and secret vault. Ask for a note in plain English and get it back. Secrets are AES-256-GCM encrypted at rest, and the default setup runs on Ollama and SQLite with no account.<br>*Go, SQLite, vector embeddings, RAG* |
-| [**notchify**](https://github.com/BiSemaphore/notchify) | A small developer toolbox that lives in the Mac camera notch: a file shelf, clipboard history, JSON and Base64 formatting, and a port inspector.<br>*Swift, macOS* |
-| [**ascent**](https://github.com/BiSemaphore/ascent) | A cohort-based learning platform built as microservices, one Postgres database per service, Kafka between them, Nginx in front.<br>*NestJS, Drizzle, Kafka, PostgreSQL, Angular, Docker Compose* |
-| [**booking-go-engine**](https://github.com/Booking-Go/booking-go-engine) | Backend for a multi-tenant booking platform for salons, clinics and gyms: slot scheduling, JWT auth, Redis-cached availability.<br>*Express, TypeScript, PostgreSQL, MongoDB, Redis* |
-| [**notebook-kit**](https://github.com/shahid-io/notebook-kit) | Turns markdown into annotatable study-notebook PDFs, with a linter, hand-drawn SVG figures and a generated question bank.<br>*Python 3 and headless Chrome, no third-party packages* |
+| Product | What it is | Links |
+| --- | --- | --- |
+| **inode** | A CLI knowledge base for notes, secrets, and commands that retrieves by meaning instead of keywords. Vector search plus an LLM, running on your machine by default (Ollama and SQLite), with an optional Postgres/pgvector backend and an MCP server so tools like Claude Code can query it directly.<br>*Go, RAG, pgvector, MCP, Ollama* | [inode.binarysemaphore.com](https://inode.binarysemaphore.com)<br>[source](https://github.com/shahid-io/inode) |
+| **notchify** | A developer toolbox that lives in the Mac camera notch: a file shelf, searchable clipboard history, JSON, Base64 and URL formatting, a color picker, and a port inspector that can free a busy port. Runs entirely on-device.<br>*Swift, macOS* | [source](https://github.com/BiSemaphore/notchify) |
+| **Resume** | A resume builder where the preview is the PDF. The on-screen preview and the print document run the same pagination module, so page breaks land in the same place on export. 21 templates, GitHub and Google sign-in, row-level security enforced in Postgres.<br>*Next.js, Supabase, PDF* | [resume.binarysemaphore.com](https://resume.binarysemaphore.com) |
 
-Earlier and smaller: [inquiro](https://github.com/shahid-io/inquiro) (a reactive Q&A platform in Java with Kafka), [orbit-queue](https://github.com/shahid-io/orbit-queue) (a Go job scheduler with cron and retries), [Qubit](https://github.com/shahid-io/Qubit) (an in-memory key-value store in Go).
+**Learn** ([learn.binarysemaphore.com](https://learn.binarysemaphore.com)): one-to-one mentorship for computer science students stuck on a specific paper or concept.
 
-## How I like to build
+### How it is built
 
-- **Measure before calling it fast.** If a project makes a performance claim, the benchmark ships with it.
-- **Fail in the open.** A dependency that breaks should become a visible state, not a blank screen or a silent retry loop.
-- **Fewer moving parts.** No dependency I can't explain, no service the problem doesn't need.
-- **Write the reasoning down.** Decisions live in a `docs/` folder next to the code, so the next person knows why, not just what.
+The apex site and every product subdomain are served by one Next.js app on Vercel. A proxy reads the request host and routes `inode.`, `resume.`, and `learn.` to their own route trees, so adding a product page is a one-line data change plus DNS. Auth and data sit in Supabase, with access rules enforced by row-level security in the database rather than remembered by application code.
 
-## Writing
+### Writing
 
-On [binarysemaphore.com/threads](https://binarysemaphore.com/threads):
+Engineering threads on [binarysemaphore.com/threads](https://binarysemaphore.com/threads):
 
 - [How semantic search finds things you can't grep](https://binarysemaphore.com/threads/how-semantic-search-works)
 - [Giving your knowledge base an MCP server](https://binarysemaphore.com/threads/an-mcp-server-for-your-notes)
 - [What a binary semaphore actually is](https://binarysemaphore.com/threads/what-is-a-binary-semaphore)
 - [Why TypeScript 7 is written in Go](https://binarysemaphore.com/threads/why-typescript-7-is-written-in-go)
-- [Claude routines are cron jobs that can think](https://binarysemaphore.com/threads/claude-routines-and-cron)
 
-## Recently pushed
+## Stack
+
+**Languages** TypeScript, Go, Python, Java, Swift<br>
+**Backend** Node.js, NestJS, Express, REST, GraphQL<br>
+**Data** PostgreSQL, MongoDB, Redis, SQLite, Kafka<br>
+**Infrastructure** Docker, GitHub Actions, Vercel, Supabase
+
+<details>
+<summary><b>Other projects</b></summary>
+
+<br>
+
+- [beeline](https://github.com/shahid-io/beeline): a command palette over 80,000 records that searches entirely in the browser, p95 of 1ms per keystroke. TypeScript.
+- [polaris](https://github.com/shahid-io/polaris): flight search across six providers that merges the same flight sold by different sellers into one row. NestJS, Next.js.
+- [notebook-kit](https://github.com/shahid-io/notebook-kit): markdown to annotatable study-notebook PDFs with a linter and generated question bank. Python.
+- [ascent](https://github.com/BiSemaphore/ascent): a cohort-based learning platform built as microservices with Kafka. NestJS, PostgreSQL, Angular.
+- [booking-go](https://github.com/Booking-Go): a multi-tenant slot booking platform. Express, PostgreSQL, MongoDB, Redis.
+- [inquiro](https://github.com/shahid-io/inquiro): a reactive Q&A platform. Java, Kafka.
+- [orbit-queue](https://github.com/shahid-io/orbit-queue): a job scheduler with cron and retries. Go.
+- [Qubit](https://github.com/shahid-io/Qubit): an in-memory key-value store. Go.
+
+**Recently pushed** <sub>(updated weekly by a GitHub Action)</sub>
 
 <!-- recent:start -->
 - [shahid-io/beeline](https://github.com/shahid-io/beeline) <sub>pushed 2026-09-09</sub>
@@ -45,17 +63,11 @@ On [binarysemaphore.com/threads](https://binarysemaphore.com/threads):
 - [BiSemaphore/ascent](https://github.com/BiSemaphore/ascent) <sub>pushed 2026-07-22</sub>
 <!-- recent:end -->
 
-<sub>Updated weekly by a GitHub Action in this repo.</sub>
+</details>
 
-## Tools I reach for
+## Contact
 
-**Languages** TypeScript, Go, Python, Java, Swift<br>
-**Backend** NestJS, Express, Next.js, Spring (reactive)<br>
-**Data** PostgreSQL, MongoDB, Redis, SQLite, Kafka<br>
-**Ops** Docker, Docker Compose, GitHub Actions, Vercel
-
-## Get in touch
-
-Open to backend and systems roles, and to contract work.
-
-[Email](mailto:razashahid532@gmail.com) · [LinkedIn](https://linkedin.com/in/shahid-raza-2615b4129/) · [X](https://x.com/coderHooon) · [LeetCode](https://leetcode.com/razashahid532) · [Binary Semaphore](https://binarysemaphore.com)
+[Email](mailto:shahid@binarysemaphore.com) ·
+[LinkedIn](https://linkedin.com/in/shahid-raza-2615b4129/) ·
+[X](https://x.com/coderHooon) ·
+[Binary Semaphore on GitHub](https://github.com/BiSemaphore)

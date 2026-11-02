@@ -56,11 +56,11 @@ Engineering threads on [binarysemaphore.com/threads](https://binarysemaphore.com
 **Recently pushed** <sub>(updated weekly by a GitHub Action)</sub>
 
 <!-- recent:start -->
+- [shahid-io/custodia](https://github.com/shahid-io/custodia) <sub>pushed 2026-10-07</sub>
 - [shahid-io/beeline](https://github.com/shahid-io/beeline) <sub>pushed 2026-09-09</sub>
-- [BiSemaphore/binarysemaphore.com](https://github.com/BiSemaphore/binarysemaphore.com) <sub>pushed 2026-09-07</sub>
 - [shahid-io/notebook-kit](https://github.com/shahid-io/notebook-kit) <sub>pushed 2026-08-30</sub>
 - [shahid-io/polaris](https://github.com/shahid-io/polaris) <sub>pushed 2026-08-16</sub>
-- [BiSemaphore/ascent](https://github.com/BiSemaphore/ascent) <sub>pushed 2026-07-22</sub>
+- [shahid-io/bob-banking-app](https://github.com/shahid-io/bob-banking-app) <sub>pushed 2026-07-11</sub>
 <!-- recent:end -->
 
 </details>
